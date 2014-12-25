@@ -45,7 +45,8 @@ class Part implements \RecursiveIterator
         2 => self::ENCODING_BINARY,
         3 => self::ENCODING_BASE64,
         4 => self::ENCODING_QUOTED_PRINTABLE,
-        5 => self::ENCODING_UNKNOWN
+        5 => self::ENCODING_UNKNOWN,
+        6 => self::ENCODING_UNKNOWN,
     );
 
     protected $type;
