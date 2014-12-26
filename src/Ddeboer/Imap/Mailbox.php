@@ -33,7 +33,10 @@ class Mailbox implements \IteratorAggregate
     {
         return $this->name;
     }
-
+    public function getDecodedName()
+    {
+        return mb_convert_encoding($this->name, "UTF-8", "UTF7-IMAP");
+    }
     /**
      * Get number of messages in this mailbox
      *
