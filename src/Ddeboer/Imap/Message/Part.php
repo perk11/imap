@@ -208,7 +208,9 @@ class Part implements \RecursiveIterator
     {
         $this->type = $this->typesMap[$structure->type];
         $this->encoding = $this->encodingsMap[$structure->encoding];
-        $this->subtype = $structure->subtype;
+      if(isset($structure->subtype)) {
+          $this->subtype = $structure->subtype;
+      }
 
         if (isset($structure->bytes)) {
             $this->bytes = $structure->bytes;
