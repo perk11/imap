@@ -49,6 +49,8 @@ class Part implements \RecursiveIterator
         6 => self::ENCODING_UNKNOWN,
         7 => self::ENCODING_UNKNOWN,
         8 => self::ENCODING_UNKNOWN,
+        9 => self::ENCODING_UNKNOWN,
+        10 => self::ENCODING_UNKNOWN,
     );
 
     protected $type;
